@@ -4,12 +4,12 @@ number = random.randint(-10000, 10000)
 temp = number
 
 if number < 0:
-    number = (number)
+    number = -(number)
 
 lastDigit = number % 10
 if temp < 0:
     number = temp
-    lastDigit = (lastDigit)
+    lastDigit = -(lastDigit)
 
 if lastDigit > 5:
     string = "and is greater than 5"
