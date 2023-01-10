@@ -7,16 +7,8 @@ def print_matrix_integer(matrix=[[]]):
         for r in range(rows):
             for c in range(columns):
                 if c == columns - 1:
-                    print("{}".format(matrix[r][c]))
+                    print("{:d}".format(matrix[r][c]))
                 else:
-                    print("{}".format(matrix[r][c]), end=" ")
+                    print("{:d}".format(matrix[r][c]), end=" ")
     else:
         print()
-
-if __name__ == '__main__':
-    matrix = [
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9]
-    ]
-    print_matrix_integer(matrix)
