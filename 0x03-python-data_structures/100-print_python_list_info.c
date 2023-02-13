@@ -1,4 +1,4 @@
-#include "python.h"
+#include "Python.h"
 #include <stdlib.h>
 
 /**
@@ -10,7 +10,7 @@
 void print_python_list_info(PyObject *p)
 {
 	PyListObject *py-list = NULL;
-	size_t le = 0, i = 0;
+	size_t len = 0, i = 0;
 	const char *py_type = NULL;
 
 	len = PyList_Size(p);
@@ -21,3 +21,6 @@ void print_python_list_info(PyObject *p)
 	{
 		py_type = Py_TYPE(py_list->ob_item[i])->tp_name;
 		printf("Element %ld: %s\n", i, py_type);
+		i++;
+	}
+}
